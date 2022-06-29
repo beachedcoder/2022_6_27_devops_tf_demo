@@ -23,7 +23,7 @@ resource "kubernetes_deployment" "events-external-deployment" {
       }
       spec {
         container {
-          image = "${var.container_registry}/${var.project_id}/${var.external_image_name}"
+          image = "${var.container_registry}/${var.external_image_name}"
           name  = "events-external"
 
           env {

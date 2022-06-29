@@ -23,7 +23,7 @@ resource "kubernetes_deployment" "events-internal-deployment" {
       }
       spec {
         container {
-          image = "${var.container_registry}/${var.project_id}/${var.internal_image_name}"
+          image = "${var.container_registry}/${var.internal_image_name}"
           name  = "events-internal"
 
           env {
